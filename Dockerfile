@@ -1,5 +1,6 @@
 FROM rust
 
+RUN rustup component add clippy
 RUN cargo install just
 RUN cargo install sccache
 
